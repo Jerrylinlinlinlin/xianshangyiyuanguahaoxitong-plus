@@ -271,8 +271,6 @@ public class ZhuanjiaLiuyanController {
         logger.debug("detail方法:,,Controller:{},,id:{}",this.getClass().getName(),id);
         ZhuanjiaLiuyanEntity zhuanjiaLiuyan = zhuanjiaLiuyanService.selectById(id);
             if(zhuanjiaLiuyan !=null){
-
-
                 //entity转view
                 ZhuanjiaLiuyanView view = new ZhuanjiaLiuyanView();
                 BeanUtils.copyProperties( zhuanjiaLiuyan , view );//把实体数据重构到view中
